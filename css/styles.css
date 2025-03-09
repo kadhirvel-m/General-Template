@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #590696;
+    --secondary-color: #8c52ff;
+    --bacground: #ffedb5;
+}
 .nav-logo {
     width: 110px;
 }
@@ -26,24 +31,26 @@
     justify-content: center;
 }
 .business-btn {
-    background-color: #ffedb5;
+    background-color: var(--bacground);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 50px;
     padding: 5px 15px;
     border: 1px solid #f0c040;
 }
-.host-btn {
+.business-btn img{
+    width: 30px;
+    padding-right: 10px;
+}
+.login-btn {
     border-radius: 50px;
     padding: 5px 15px;
     border: 1px solid #ccc;
 }
-.dot-notification {
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    width: 8px;
-    height: 8px;
-    background-color: orange;
-    border-radius: 50%;
+.login-btn:hover {
+    border: 1px solid #ccc;
+    background-color: var(--primary-color);
 }
 @media (max-width: 991px) {
     .search-input {
