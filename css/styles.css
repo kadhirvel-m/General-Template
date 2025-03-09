@@ -1,0 +1,58 @@
+.nav-logo {
+    width: 110px;
+}
+.search-input {
+    border-radius: 50px;
+    padding-left: 2.5rem;
+    width: 250px;
+    border: 1px solid #ddd;
+}
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+}
+.profile-circle {
+    width: 35px;
+    height: 35px;
+    background-color: #17a2b8;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.business-btn {
+    background-color: #ffedb5;
+    border-radius: 50px;
+    padding: 5px 15px;
+    border: 1px solid #f0c040;
+}
+.host-btn {
+    border-radius: 50px;
+    padding: 5px 15px;
+    border: 1px solid #ccc;
+}
+.dot-notification {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: orange;
+    border-radius: 50%;
+}
+@media (max-width: 991px) {
+    .search-input {
+        width: 100%;
+    }
+    .right-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+    }
+}
