@@ -3,6 +3,8 @@
     --secondary-color: #8c52ff;
     --bacground: #ffedb5;
 }
+
+/* Navbar Start */
 .nav-logo {
     width: 110px;
 }
@@ -63,13 +65,10 @@
         width: 100%;
     }
 }
+/* Navbar End */
 
 
-
-
-
-
-
+/* Footer Start */
 .footer-section ul {
     margin: 0;
     padding: 0;
@@ -235,3 +234,5 @@
 }
 .terms-privacy li+li a:after {
     display: none;
+}
+/* Footer End */
