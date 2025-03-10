@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stack AI</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <!-- FontAwesome (still uses CDN) -->
+  <script src="https://kit.fontawesome.com/c951bb1c34.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/pricing.css">
+  <link rel="icon" type="image/x-icon" href="img/favicon.png">
+  <!-- Bootstrap JS (Bundle with Popper) -->
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body onload="hideLoader()">
+<!-- Loader -->
+<div class="loader-container" id="loading">
+  <h3 style="margin-bottom: 100px;">Please Wait</h3>
+    <div class="loader-6">
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+    </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom px-4">
+    <div class="container-fluid">
+        <!-- Left Section -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img class="nav-logo" src="img/logo.png" alt="">
+        </a>
+
+        <!-- Toggle Button for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Section -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Search Bar -->
+            <div class="position-relative me-lg-3 my-2 my-lg-0">
+                <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" class="form-control search-input" placeholder="Search Opportunities">
+            </div>
+
+            <!-- Center Section -->
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link text-dark" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="#">Jobs</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="#">Competitions</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="#">Practice</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">
+                        More
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Right Section -->
+            <div class="d-flex align-items-center gap-3 right-section">
+                <div class="position-relative">
+                    <i class="fa-regular fa-comment fa-lg"></i>
+                </div>
+                <i class="fa-regular fa-bell fa-lg"></i>
+                <div class="profile-circle">K</div>
+                <button class="btn btn-outline-dark login-btn"><i class="fa-regular fa-plus"></i> Login</button>
+                <button class="btn business-btn d-flex align-items-center">
+                    <span class="fw-bold"><img src="img/icon.png" alt="">For Business
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Pricing Table -->
+<section class="plans__container">
+  <div class="plans">
+    <div class="plansHero">
+      <h1 class="plansHero__title">Simple, transparent pricing</h1>
+      <p class="plansHero__subtitle">No contracts. No suprise fees.</p>
+    </div>
+
+    <div class="planItem__container">
+      <!--free plan starts -->
+      <div class="planItem planItem--free">
+        <div class="price-card">
+          <div class="card__header">
+            <div class="card__icon symbol symbol--rounded"></div>
+            <h2>Free</h2>
+          </div>
+          <div class="card__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</div>
+        </div>
+
+        <div class="price">$0<span>/ month</span></div>
+
+        <ul class="featureList">
+          <li>2 links</li>
+          <li>Own analytics platform</li>
+          <li class="disabled">Chat support</li>
+          <li class="disabled">Mobile application</li>
+          <li class="disabled">Unlimited users</li>
+        </ul>
+
+        <button class="button">Get Started</button>
+      </div>
+      <!--free plan ends -->
+
+      <!--pro plan starts -->
+      <div class="planItem planItem--pro">
+        <div class="price-card">
+          <div class="card__header">
+            <div class="card__icon symbol"></div>
+            <h2>Pro</h2>
+            <div class="card__label label">Best Value</div>
+          </div>
+          <div class="card__desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</div>
+        </div>
+
+        <div class="price">$18<span>/ month</span></div>
+
+        <ul class="featureList">
+          <li>2 links</li>
+          <li>Own analytics platform</li>
+          <li>Chat support</li>
+          <li class="disabled">Mobile application</li>
+          <li class="disabled">Unlimited users</li>
+        </ul>
+
+        <button class="button button--pink">Get Started</button>
+      </div>
+      <!--pro plan ends -->
+
+      <!--entp plan starts -->
+      <div class="planItem planItem--entp">
+        <div class="price-card">
+          <div class="card__header">
+            <div class="card__icon"></div>
+            <h2 class="text-white">Enterprise</h2>
+          </div>
+          <div class="card__desc">Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</div>
+        </div>
+
+        <div class="price">Let's Talk</div>
+
+        <ul class="featureList">
+          <li>2 links</li>
+          <li>Own analytics platform</li>
+          <li>Chat support</li>
+          <li>Mobile application</li>
+          <li>Unlimited users</li>
+          <li>Customize Panel</li>
+        </ul>
+
+        <button class="button button--white">Get Started</button>
+      </div>
+      <!--entp plan ends -->
+
+    </div>
+  </div>
+</section>
+<!-- partial -->
+  
+<!-- Footer -->
+<footer class="footer-section">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="widget company-intro-widget">
+            <a href="index.html" class="site-logo"><img src="img/logo-light.png" alt="logo"></a>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+            <ul class="company-footer-contact-list">
+              <li><i class="fas fa-phone"></i>0123456789</li>
+              <li><i class="fas fa-clock"></i>Mon - Sat 8.00 - 18.00</li>
+            </ul>
+          </div>
+        </div><!-- widget end -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="widget course-links-widget">
+            <h5 class="widget-title">Popular Courses</h5>
+            <ul class="courses-link-list">
+              <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Academic English</a></li>
+              <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Web Technology</a></li>
+              <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>PC Systems</a></li>
+              <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Ui Web Design</a></li>
+              <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Web Development</a></li>
+              <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i>Apps Development</a></li>
+            </ul>
+          </div>
+        </div><!-- widget end -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="widget latest-news-widget">
+            <h5 class="widget-title">lastest news</h5>
+            <ul class="small-post-list">
+              <li>
+                <div class="small-post-item">
+                  <a href="#" class="post-date">July 18, 2018</a>
+                  <h6 class="small-post-title"><a href="#">Lorem Ipsum is simply dummy text of the printing.</a></h6>
+                </div>
+              </li><!-- small-post-item end -->
+              <li>
+                <div class="small-post-item">
+                  <a href="#" class="post-date">July 28, 2018</a>
+                  <h6 class="small-post-title"><a href="#">Lorem Ipsum is simply dummy text of the printing</a></h6>
+                </div>
+              </li><!-- small-post-item end -->
+            </ul>
+          </div>
+        </div><!-- widget end -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="widget newsletter-widget">
+            <h5 class="widget-title">Newsletter</h5>
+            <div class="footer-newsletter">
+              <p>Sign Up to Our Newsletter to Get Latest Updates & Services</p>
+              <form class="news-letter-form">
+                <input type="email" name="news-email" id="news-email" placeholder="Your email address">
+                <input type="submit" value="Send">
+              </form>
+            </div>
+          </div>
+        </div><!-- widget end -->
+      </div>
+    </div> 
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-6 col-sm-6 text-sm-left text-center">
+            <span class="copy-right-text">© 2025 <a href="#">Stack</a> All Rights Reserved.</span>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <ul class="terms-privacy d-flex justify-content-sm-end justify-content-center">
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div><!-- footer-bottom end -->
+</footer>
+</body>
+<script>
+  function hideLoader() {
+      setTimeout(() => {
+          document.getElementById("loading").style.display = "none";
+          document.getElementById("content").style.display = "block";
+      }, 1000);
+  }
+</script>
+</html>
