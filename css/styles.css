@@ -297,8 +297,7 @@
     font-weight: 500;
     border-radius: 8px;
     padding: 10px;
-    text-align: ;
-    max-width: 500px;
+    max-width: 550px;
 }
 .custom-heading {
     font-size: 6em;
@@ -359,3 +358,29 @@
     margin-top: 80px !important;
 }
 /* Feature Section End */
+
+
+/* Integration Start */
+.integration-card {
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: white;
+    padding: 30px;
+    margin-top: 20px;
+}
+.integration-card img {
+    width: 50px;
+    height: auto;
+}
+.integration-container h2 {
+    font-weight: bold;
+    background: var(--gradient-bg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; 
+}
+.integration-container h5 {
+    color: var(--primary-color);
+}
+/* Integration End */
