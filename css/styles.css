@@ -662,3 +662,177 @@
     --baseSize: 14px;
   }
 }
+
+/* Testimonials Start */
+.outerdiv h2 {
+  font-size: 3.5em;
+  padding: 100px !important;
+  margin-right: -160px;
+  background: var(--gradient-bg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;    
+}
+.outerdiv {
+	width: 100%;
+  min-height: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.innerdiv {
+	transform: scale(0.8);
+	margin: 1rem;
+	display: grid;
+	grid-gap: 2rem;
+	grid-template-rows: repeat(2,22rem);
+	grid-template-columns: repeat(4,17rem);
+}
+.eachdiv {
+	padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 5px 5px 20px #6d6b6b6b;
+  color: white;
+}
+.div1 {
+	background: var(--secondary-color);
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-image: url(https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position-x: 25rem;
+}
+.div2 {
+	background:#49556B;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.div3 {
+	background: white;
+  grid-column: 4/5;
+  grid-row: 1/3;
+  color: black;
+}
+.div4 {
+	background: white;
+	grid-column: 1/2;
+  grid-row: 2/3;
+  color: black;
+}
+.div5 {
+	background: var(--primary-color);
+	grid-column: 2/4;
+  grid-row: 2/3;
+}
+.userdetails {
+	display: flex;
+}
+.imgbox {
+	margin-right: 1rem;
+}
+.imgbox img {
+	border-radius: 50%;
+	width: 2rem;
+	border: 2px solid #cec5c5;
+}
+.detbox {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;}
+.detbox p{
+	margin: 0;
+}
+.detbox .name {
+	color: hsl(0, 0%, 81%);
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+    font-weight: 600;
+}
+.detbox .name.dark {
+	color: #49505A;
+}
+.detbox .designation {
+	color: hsl(0, 0%, 81%);
+    opacity: 50%;
+    font-size: 0.8rem;
+}
+.detbox .designation.dark {
+	color: #49505A;
+}
+.review h4 {
+	font-size: 1.4rem;
+	color: #F3DEFF;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+}
+.review.dark h4{
+	color:#4B5258;
+}
+.review p {
+	font-size: 0.95rem;
+    color: #F3DEFF;
+    font-weight: 500;
+    opacity: 50%;
+    line-height: 1.5;
+}
+.review.dark p {
+	color: #0e0e0e;
+}
+.attribution {
+	font-size: 1rem;
+    line-height: 1.5;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    text-align: right;
+}
+.attribution a {
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px)
+{
+  .outerdiv {
+    flex-direction: column;
+  }
+  .outerdiv h2 {
+    font-size: 2em !important;
+    margin-left: -50px;
+    padding-top: 0% !important;
+    padding-bottom: 0% !important;
+  }
+	.innerdiv {
+		transform: scale(0.7);
+	}
+}
+@media only screen and (max-width: 800px)
+{
+	.innerdiv {
+		transform: scale(0.6);
+	}
+}
+@media only screen and (max-width: 600px)
+{
+  .outerdiv {
+    margin-right: 0%;
+    padding: 0%;
+  }
+  .outerdiv h2 {
+    font-size: 3em;
+  }
+	.div1 {
+		background-position-x: 10rem;
+	}
+	.innerdiv {
+		display: flex; 
+		flex-direction: column;
+		transform: scale(1);
+		margin: 2rem;
+		margin-bottom: 5rem;
+	}
+	.attribution {
+		position: relative;
+	}
+}
+/* Testimonials End */
