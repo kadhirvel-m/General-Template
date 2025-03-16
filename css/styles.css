@@ -66,6 +66,16 @@
 /* Loader End */
 
 /* Navbar Start */
+nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050; 
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .nav-logo {
     width: 110px;
 }
@@ -299,6 +309,7 @@
 
 /* Header Start */
 .hero-container {
+   margin-top: 100px !important;
     display: flex;
     gap: 150px;
 }
