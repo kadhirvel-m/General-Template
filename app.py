@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # API Configuration
-API_KEY = "AIzaSyDKFCEBYaOMCWRqry6uGla8W4gZKmLhj7g"
+API_KEY = ""
 URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={API_KEY}"
 
 # Function to Determine Relevant Departments (Max 4-5)
